@@ -7,7 +7,7 @@ function trocarTitulo(){
     tituloAtual.textContent = `Escola ${tituloNovo}`
 
     if(corEscolhida == 'amarelo'){
-        tituloAtual.className = null
+        tituloAtual.className = ''
         tituloAtual.classList.add('amarelo')
     }else if(corEscolhida == 'verde'){
         tituloAtual.classList.add('verde')
@@ -29,6 +29,18 @@ function cadastrar(){
     const cidade1 = document.getElementById('cidade')
     const cidade = prompt('Digite sua cidade')
     cidade1.textContent = `Cidade: ${cidade}`
+
+    const media1 = document.getElementById('media')
+    const media = prompt('Digite sua média')
+    media1.textContent = `Média: ${media}`
+
+    if(media >= 5){
+        media1.className = ''
+        media1.classList.add('azul')
+    }else if(media < 5){
+        media1.className = ''
+        media1.classList.add('vermelha')
+    }
 }
 
 const botaoCadastrar = document.getElementById('cadastrarbutton')
