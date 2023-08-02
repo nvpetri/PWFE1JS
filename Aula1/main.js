@@ -3,7 +3,15 @@
 function trocarTitulo(){
     const tituloAtual = document.getElementById('titulo')
     const tituloNovo = prompt('Digite um titulo')
+    const corEscolhida = prompt('Digite sua cor')
     tituloAtual.textContent = `Escola ${tituloNovo}`
+
+    if(corEscolhida == 'amarelo'){
+        tituloAtual.className = null
+        tituloAtual.classList.add('amarelo')
+    }else if(corEscolhida == 'verde'){
+        tituloAtual.classList.add('verde')
+    }
 }
 
 const botaoTrocarTitulo = document.getElementById('trocar-titulo')
@@ -22,6 +30,7 @@ function cadastrar(){
     const cidade = prompt('Digite sua cidade')
     cidade1.textContent = `Cidade: ${cidade}`
 }
+
 const botaoCadastrar = document.getElementById('cadastrarbutton')
 botaoCadastrar.addEventListener('click', cadastrar)
 
