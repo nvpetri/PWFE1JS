@@ -51,6 +51,7 @@
 .imagem{
     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBt3mwuD9o620pY9s9krwAo_TykNXBVhCUCaFOBpjHtDa3QH2zD8o_VysXfpAUGupht5U&usqp=CAU");
     background-position: center;
+    background-size: cover;
 }
 
 .zoom{
