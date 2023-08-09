@@ -43,3 +43,30 @@
 .circulo{
     border-radius: 50%;
 }
+
+.giro{
+    transform: rotate(180deg);
+}
+
+.imagem{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBt3mwuD9o620pY9s9krwAo_TykNXBVhCUCaFOBpjHtDa3QH2zD8o_VysXfpAUGupht5U&usqp=CAU");
+    background-position: center;
+}
+
+.zoom{
+    scale: 1.5;
+}
+
+.img2{
+    background-image: url('https://images.tcdn.com.br/img/img_prod/813520/jogo_de_roda_original_vw_taos_rline_aro_18x7_pretadiamantada_5x112_et_45_usada_427_1_8ad99fe1a10f02e6083cc206b10baf76.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.mover{
+    order: -1;
+}
+
+.sumir{
+    opacity: 0;
+}
