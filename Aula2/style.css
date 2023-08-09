@@ -10,12 +10,17 @@
     flex-direction: column;
     align-items: center;
     padding-block: 16px;
+    gap: 16px;
 }
 
 .item{
     height: 150px;
     width: 80%;
     background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 32px;
 }
 
 .texto{
@@ -27,4 +32,14 @@
     width: 100px;
     height: 100px;
     background-color: green;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.vermelho{
+    background-color: red;
+}
+
+.circulo{
+    border-radius: 50%;
 }
