@@ -4,8 +4,14 @@
     box-sizing: border-box;
 }
 
+body{
+    background-image: url("https://softdesign.com.br/wp-content/webpc-passthru.php?src=https://softdesign.com.br/wp-content/uploads/2022/05/Programacao-Funcional-scaled-2.jpg&nocache=1");
+    background-size: cover;
+    background-position: center;
+}
+
 .container{
-    width: 100vw;
+    width: 90vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -16,15 +22,16 @@
 .item{
     height: 150px;
     width: 80%;
-    background-color: black;
+    background-color: silver;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-inline: 32px;
+    border-radius: 30px;
 }
 
 .texto{
-    color: white;
+    color: black;
     font-size: 64px;
 }
 
