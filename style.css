@@ -35,8 +35,8 @@ main{
 }
 
 button{
-    width: 400px;
-    height: 200px;
+    width: 200px;
+    height: 100px;
     border-radius: 10px;
     background-color: red;
     border: none;
@@ -48,7 +48,7 @@ button:hover{
 }
 
 button a{
-    font-size: 2.5rem;
+    font-size: 1.75rem;
     font-family: 'Fjalla One', sans-serif;
     color: white;
     text-decoration: none;
