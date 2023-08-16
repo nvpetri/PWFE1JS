@@ -4,14 +4,22 @@
     box-sizing: border-box;
 }
 
+body{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-block: 36px;
+}
+
 .container{
     width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 32px;
-    gap: 16px;
-    color: white;
+    justify-content: center;
+    padding-block: 32px;    
+    gap: 64px;
 }
 
 .itensIndiv{
@@ -27,7 +35,7 @@
     background-color: black;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     height: 5rem;
     width: 95%;
     padding-inline: 32px;
@@ -37,14 +45,16 @@
 }
 
 button{
-    color: black;
+    color: white;
     cursor: pointer;
-    background-color: red;
+    background-color: maroon;
     padding: 2px 6px;
+    border: none;
+    width: auto;
     padding-inline: 12px;
     height: 2rem;
     border-radius: 10px;
-    font-weight: 300;
+    font-weight: 600;
     text-transform: uppercase;
 }
 
@@ -57,5 +67,6 @@ button{
     align-items: center;
     font-size: 0.8rem;
     padding-inline: 4px;
+    border: none;
     border-radius: 2px;
 }
