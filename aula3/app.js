@@ -42,7 +42,7 @@ function Media () {
         alert(`Sua média é ${media}. Parabéns, você foi aprovado!`)
 
     } else {
-        const notaExame = prompt(`Sua média é ${notaExame}. Insira sua nota de exame`)
+        let notaExame = prompt(`Sua média é ${media}. Insira sua nota de exame`)
         const media2 = (media + Number(notaExame)) / 2
         
         if (media2 >= 5){
@@ -51,7 +51,7 @@ function Media () {
             alert(`Sua nova média é ${media2}. Você foi reprovado`)
         }
     }
-}botaoMedia.addEventListener('click', calcularMedia)
+}botaoMedia.addEventListener('click', Media)
 
 function somarTresValores () {
     const valor1 = Number(document.getElementById('valor1').value)

@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 body{
@@ -10,6 +11,9 @@ body{
     flex-direction: column;
     align-items: center;
     padding-block: 36px;
+    background-image: linear-gradient(to right bottom, rgb(0,0,0, 0.7), rgb(0,0,0,0.5)), url("https://arquivo.devmedia.com.br/cursos/imagem/curso_388.jpg");
+    background-position: center;
+    background-repeat: round;
 }
 
 .container{
@@ -28,7 +32,7 @@ body{
     align-items: center;
     justify-content: center;
     gap: 12px;
-    width: 100%;
+    width: 90%;
 }
 
 .item{
@@ -37,7 +41,7 @@ body{
     align-items: center;
     justify-content: center;
     height: 5rem;
-    width: 95%;
+    width: 90%;
     padding-inline: 32px;
     gap: 24px;
     font-weight: 700;
@@ -45,9 +49,9 @@ body{
 }
 
 button{
-    color: white;
+    color: black;
     cursor: pointer;
-    background-color: maroon;
+    background-color: yellow;
     padding: 2px 6px;
     border: none;
     width: auto;
@@ -69,4 +73,18 @@ button{
     padding-inline: 4px;
     border: none;
     border-radius: 2px;
+}
+
+h1{
+    color: black;
+    background-color: yellow;
+    border-radius: 20%;
+    font-size: xx-large;
+}
+
+h2{
+    color: black;
+    background-color: yellow;
+    border-radius: 20%;
+    font-size: xx-large;
 }
