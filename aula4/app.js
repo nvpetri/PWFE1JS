@@ -10,14 +10,14 @@ const botaoAnteriorImpar = document.getElementById('mostrar-anteriorImpar')
 const botaoTriplo = document.getElementById('mostrar-triplo')
 const botaoPrimo = document.getElementById('mostrar-primo')
 
-function mostrarTodosNumeros(){
+function mostrarTodosNumeros() {
     const numeros = document.getElementById('numeros').value.split(',')
     const container = document.getElementById('container-numeros')
-    
+
     container.replaceChildren('')
     const ultimoIndice = numeros.length
 
-    for(let contador = 0; contador < ultimoIndice ; contador ++){
+    for (let contador = 0; contador < ultimoIndice; contador++) {
         const novoSpan = document.createElement('span')
         novoSpan.textContent = numeros[contador]
         container.appendChild(novoSpan)
@@ -25,132 +25,155 @@ function mostrarTodosNumeros(){
 
 }
 
-function mostrarPares(){
+function mostrarPares() {
     const numeros = document.getElementById('numeros').value.split(',')
     const container = document.getElementById('cont-mostrar-pares')
 
     container.replaceChildren('')
     const ultimoIndice = numeros.length
 
-    for(let contador = 0; contador < ultimoIndice ; contador ++){
-        if(numeros[contador] % 2 == 0){
+    for (let contador = 0; contador < ultimoIndice; contador++) {
+        if (numeros[contador] % 2 == 0) {
             const novoSpan = document.createElement('span')
             novoSpan.textContent = numeros[contador]
-            container.appendChild (novoSpan)
+            container.appendChild(novoSpan)
         }
     }
 }
 
-function mostrarImpares(){
+function mostrarImpares() {
     const numeros = document.getElementById('numeros').value.split(',')
     const container = document.getElementById('cont-mostrar-impares')
 
     container.replaceChildren('')
     const ultimoIndice = numeros.length
 
-    for(let contador = 0; contador < ultimoIndice ; contador ++){
-        if(numeros[contador] % 2 == 1){
+    for (let contador = 0; contador < ultimoIndice; contador++) {
+        if (numeros[contador] % 2 == 1) {
             const novoSpan = document.createElement('span')
             novoSpan.textContent = numeros[contador]
-            container.appendChild (novoSpan)
+            container.appendChild(novoSpan)
         }
     }
 }
 
-function divisivel1(){
+function divisivel1() {
     const numeros = document.getElementById('numeros').value.split(',')
     const container = document.getElementById('cont-mostrar-multiplos')
 
     container.replaceChildren('')
     const ultimoIndice = numeros.length
 
-    for(let contador = 0; contador < ultimoIndice ; contador ++){
-        if(numeros[contador] % 3 == 0 && numeros[contador] % 4 == 0){
+    for (let contador = 0; contador < ultimoIndice; contador++) {
+        if (numeros[contador] % 3 == 0 && numeros[contador] % 4 == 0) {
             const novoSpan = document.createElement('span')
             novoSpan.textContent = numeros[contador]
-            container.appendChild (novoSpan)
+            container.appendChild(novoSpan)
         }
     }
 }
 
-function divisivel2(){
+function divisivel2() {
     const numeros = document.getElementById('numeros').value.split(',')
     const container = document.getElementById('cont-mostrar-multiplos2')
 
     container.replaceChildren('')
     const ultimoIndice = numeros.length
 
-    for(let contador = 0; contador < ultimoIndice ; contador ++){
-        if(numeros[contador] % 3 == 0 || numeros[contador] % 4 == 0){
+    for (let contador = 0; contador < ultimoIndice; contador++) {
+        if (numeros[contador] % 3 == 0 || numeros[contador] % 4 == 0) {
             const novoSpan = document.createElement('span')
             novoSpan.textContent = numeros[contador]
-            container.appendChild (novoSpan)
+            container.appendChild(novoSpan)
         }
     }
 }
 
-function anterior(){
+function anterior() {
     const numeros = document.getElementById('numeros').value.split(',')
     const container = document.getElementById('cont-mostrar-anterior')
 
     container.replaceChildren('')
     const ultimoIndice = numeros.length
 
-    for(let contador = 0; contador < ultimoIndice ; contador ++){
+    for (let contador = 0; contador < ultimoIndice; contador++) {
         const novoSpan = document.createElement('span')
-        novoSpan.textContent = numeros[contador] -1
+        novoSpan.textContent = numeros[contador] - 1
         container.appendChild(novoSpan)
     }
 }
 
-function anteriorImpar(){
+function anteriorImpar() {
     const numeros = document.getElementById('numeros').value.split(',')
     const container = document.getElementById('cont-mostrar-anteriorImpar')
 
     container.replaceChildren('')
     const ultimoIndice = numeros.length
 
-    for(let contador = 0; contador < ultimoIndice ; contador ++){
-        const valor = numeros[contador] -1
-        if(valor % 2 == 1){
+    for (let contador = 0; contador < ultimoIndice; contador++) {
+        const valor = numeros[contador] - 1
+        if (valor % 2 == 1) {
             const novoSpan = document.createElement('span')
             novoSpan.textContent = valor
             container.appendChild(novoSpan)
-        }else{
+        } else {
             const novoSpan = document.createElement('span')
-            novoSpan.textContent = valor -1
+            novoSpan.textContent = valor - 1
             container.appendChild(novoSpan)
         }
     }
 }
 
-function triplo(){
+function triplo() {
     const numeros = document.getElementById('numeros').value.split(',')
     const container = document.getElementById('cont-mostrar-triplo')
 
     container.replaceChildren('')
     const ultimoIndice = numeros.length
 
-    for(let contador = 0; contador < ultimoIndice ; contador ++){
+    for (let contador = 0; contador < ultimoIndice; contador++) {
         const novoSpan = document.createElement('span')
-        novoSpan.textContent = numeros[contador] * 3 
+        novoSpan.textContent = numeros[contador] * 3
         container.appendChild(novoSpan)
     }
 }
 
-function primo(){
-    const numeros = document.getElementById('numeros').value.split(',')
-    const container = document.getElementById('cont-mostrar-primo')
+function primo() {
+    const numeros = document.getElementById('numeros').value.split(',');
+    const container = document.getElementById('cont-mostrar-primo');
 
-    container.replaceChildren('')
-    const ultimoIndice = numeros.length
+    container.replaceChildren('');
+    const ultimoIndice = numeros.length;
 
-    for (let contador = 0; contador < numeros.length; contador++) {
-        const valor = numeros[contador] + 1;
-    
-        if (valor % valor === 0 && valor % 1 === 0) {
+    for (let contador = 0; contador < ultimoIndice; contador++) {
+        const valor = parseInt(numeros[contador]);
+
+        let ehPrimo = true;
+        if (valor <= 1) 
+            ehPrimo = false;
+        else if (valor <= 3) 
+            ehPrimo = true;
+        else if (valor % 2 === 0 || valor % 3 === 0) 
+            ehPrimo = false;
+        else {
+            let i = 5;
+            while (i * i <= valor) {
+                if (valor % i === 0 || valor % (i + 2) === 0) {
+                    ehPrimo = false;
+                    break;
+                }
+                i += 6;
+            }
+        }
+
+        if (ehPrimo) {
             const novoSpan = document.createElement('span');
             novoSpan.textContent = valor;
+            container.appendChild(novoSpan);
+        } else {
+            const valor2 = valor + 1;
+            const novoSpan = document.createElement('span');
+            novoSpan.textContent = valor2;
             container.appendChild(novoSpan);
         }
     }
