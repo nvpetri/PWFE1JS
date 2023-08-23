@@ -9,8 +9,8 @@ body{
     grid-template-rows: 200px 1fr 150px;
     height: 100vh;
     font-family: 'Fjalla One', sans-serif;
-    background-color: #14313e;
     background-image: url("https://bs-uploads.toptal.io/blackfish-uploads/components/seo/content/og_image_file/og_image/1284736/op-Ten-Front-End-Design-Rules-For-Developers_Luke-Social-33a3a7c9b759fdaa22973906070f8065.png");
+    background-position: center;
 }
 
 header{
