@@ -145,8 +145,14 @@ function primo(){
     container.replaceChildren('')
     const ultimoIndice = numeros.length
 
-    for(let contador = 0; contador < ultimoIndice ; contador ++){
-        
+    for (let contador = 0; contador < numeros.length; contador++) {
+        const valor = numeros[contador] + 1;
+    
+        if (valor % valor === 0 && valor % 1 === 0) {
+            const novoSpan = document.createElement('span');
+            novoSpan.textContent = valor;
+            container.appendChild(novoSpan);
+        }
     }
 }
 
