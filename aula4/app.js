@@ -170,14 +170,10 @@ function primo() {
             const novoSpan = document.createElement('span');
             novoSpan.textContent = valor;
             container.appendChild(novoSpan);
-        } else {
-            const valor2 = valor + 1;
-            const novoSpan = document.createElement('span');
-            novoSpan.textContent = valor2;
-            container.appendChild(novoSpan);
         }
     }
 }
+
 
 botaoPrimo.addEventListener('click', primo)
 
