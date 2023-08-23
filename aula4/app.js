@@ -142,37 +142,46 @@ function primo() {
     const numeros = document.getElementById('numeros').value.split(',');
     const container = document.getElementById('cont-mostrar-primo');
 
-    container.replaceChildren('');
-    const ultimoIndice = numeros.length;
+    container.replaceChildren();
 
-    for (let contador = 0; contador < ultimoIndice; contador++) {
-        const valor = parseInt(numeros[contador]);
+    for (const numero of numeros) {
+        const valor = parseInt(numero);
+        const proximoPrimo = encontrarProximoPrimo(valor);
 
-        let ehPrimo = true;
-        if (valor <= 1) 
-            ehPrimo = false;
-        else if (valor <= 3) 
-            ehPrimo = true;
-        else if (valor % 2 === 0 || valor % 3 === 0) 
-            ehPrimo = false;
-        else {
-            let i = 5;
-            while (i * i <= valor) {
-                if (valor % i === 0 || valor % (i + 2) === 0) {
-                    ehPrimo = false;
-                    break;
-                }
-                i += 6;
-            }
-        }
-
-        if (ehPrimo) {
-            const novoSpan = document.createElement('span');
-            novoSpan.textContent = valor;
-            container.appendChild(novoSpan);
-        }
+        const novoSpan = document.createElement('span');
+        novoSpan.textContent = proximoPrimo;
+        container.appendChild(novoSpan);
     }
 }
+
+function isPrimo(valor) {
+    if (valor <= 1) return false;
+    if (valor <= 3) return true;
+    if (valor % 2 === 0 || valor % 3 === 0) return false;
+
+    let i = 5;
+    while (i * i <= valor) {
+        if (valor % i === 0 || valor % (i + 2) === 0) {
+            return false;
+        }
+        i += 6;
+    }
+
+    return true;
+}
+
+function encontrarProximoPrimo(valor) {
+    let proximo = valor + 1;
+
+    while (true) {
+        if (isPrimo(proximo)) {
+            return proximo;
+        }
+        proximo++;
+    }
+}
+
+
 
 
 botaoPrimo.addEventListener('click', primo)
