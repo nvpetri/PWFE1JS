@@ -62,29 +62,13 @@ button{
     text-transform: uppercase;
 }
 
-.result, input{
-    width: 150px;
-    height: 40%;
-    background-color: white;
-    color: black;
-    display: flex;
-    align-items: center;
-    font-size: 0.8rem;
-    padding-inline: 4px;
-    border: none;
-    border-radius: 2px;
+.numeros{
+    flex-grow: 1;
+    padding: 0, 8px;
 }
-
-h1{
-    color: black;
-    background-color: yellow;
-    border-radius: 20%;
-    font-size: xx-large;
-}
-
-h2{
-    color: black;
-    background-color: yellow;
-    border-radius: 20%;
-    font-size: xx-large;
+.numeros span{
+    display: inline-block;
+    background-color: goldenrod;
+    width: 50px;
+    text-align: center;
 }
