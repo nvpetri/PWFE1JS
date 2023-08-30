@@ -3,3 +3,35 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+body{
+    background-color: #f4f4f4;
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    place-content: center;
+    height: 100vh;
+}
+
+.card-container{
+    display: flex;
+    gap: 16px;
+}
+
+.card{
+    width: 200px;
+    background-color: snow;
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 16px;
+    box-shadow: 0px 2px 4px #0004;
+}
+
+.card img{
+    max-width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
