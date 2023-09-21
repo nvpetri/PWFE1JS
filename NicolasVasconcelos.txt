@@ -1,0 +1,10 @@
+API's que serão utilizadas:
+https://viacep.com.br/
+https://developers.google.com/maps/documentation?hl=pt-br
+
+Ideia: 
+Utilizar a API do ViaCep para capturar as informações do endereço
+e enviar as coordenadas para a API do maps e mostrar a localização.
+
+Imagem:
+https://www.canva.com/design/DAFvBMn4tH0/Vz2LP4EdYgoOsgRIAZK9dQ/view?utm_content=DAFvBMn4tH0&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelinkhttps://www.canva.com/design/DAFvBMn4tH0/Vz2LP4EdYgoOsgRIAZK9dQ/view?utm_content=DAFvBMn4tH0&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink
