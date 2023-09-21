@@ -1,69 +1,67 @@
-*{
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    overflow-y: hidden;
 }
 
-body{
-    display: grid;
-    grid-template-rows: 200px 1fr 150px;
-    height: 100vh;
-    font-family: 'Fjalla One', sans-serif;
-    background-image: url("https://bs-uploads.toptal.io/blackfish-uploads/components/seo/content/og_image_file/og_image/1284736/op-Ten-Front-End-Design-Rules-For-Developers_Luke-Social-33a3a7c9b759fdaa22973906070f8065.png");
-    background-position: center;
-}
-
-header{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#logo{
-    height: 20%;
-}
-
-header p{
-    font-size: 3rem;
-    color: red;
-}
-
-main{
+header {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 32px;
+    padding: 10px 20px;
 }
 
-button{
-    width: 200px;
-    height: 100px;
-    border-radius: 10px;
-    background-color: red;
+#logo {
+    width: 100px;
+    height: 34px;
+    margin-right: 20px;
+}
+
+header p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #fff;
     border: none;
+    border-bottom: 1px solid #ddd;
+    color: #333;
+    font-size: 18px;
+    text-align: left;
+    transition: background-color 0.2s;
 }
 
-button:hover{
-    transform: scale(1.1);
-    box-shadow: 5px 5px 20px black;
-}
-
-button a{
-    font-size: 1.75rem;
-    font-family: 'Fjalla One', sans-serif;
-    color: white;
+button a {
     text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
+    color: #333;
 }
 
-footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2rem;
-    color: #ffdf00;
+button:last-child {
+    border-bottom: none;
+}
+
+button:hover {
+    background-color: #f9f9f9;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #fff;
+    font-weight: bold;
 }
